@@ -1,0 +1,67 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the include file winsock2.h exists failed with the following output:
+Change Dir: /Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0efe0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0efe0.dir/build.make CMakeFiles/cmTC_0efe0.dir/build
+Building C object CMakeFiles/cmTC_0efe0.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/cmTC_0efe0.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_0efe0.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_0efe0.dir/CheckIncludeFile.c.o -c /Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'winsock2.h' file not found
+#include <winsock2.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0efe0.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_0efe0/fast] Error 2
+
+
+
+Determining if the include file mem.h exists failed with the following output:
+Change Dir: /Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9a26b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9a26b.dir/build.make CMakeFiles/cmTC_9a26b.dir/build
+Building C object CMakeFiles/cmTC_9a26b.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/cmTC_9a26b.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_9a26b.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_9a26b.dir/CheckIncludeFile.c.o -c /Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'mem.h' file not found
+#include <mem.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9a26b.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_9a26b/fast] Error 2
+
+
+
+Determining if the include file BaseTsd.h exists failed with the following output:
+Change Dir: /Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_876b6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_876b6.dir/build.make CMakeFiles/cmTC_876b6.dir/build
+Building C object CMakeFiles/cmTC_876b6.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/cmTC_876b6.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_876b6.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_876b6.dir/CheckIncludeFile.c.o -c /Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/mheidemeyer/Downloads/podofo-0.9.7/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'BaseTsd.h' file not found
+#include <BaseTsd.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_876b6.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_876b6/fast] Error 2
+
+
+
