@@ -16,5 +16,5 @@ ssh-add -K \<path to private key\>
 
 ## Parsing text from pdf
 
-### See folder pdf_text_extraction_with_podofo  
+See folder pdf_text_extraction_with_podofo for how to extract raw text from a pdf file  
 
