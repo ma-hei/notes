@@ -18,3 +18,8 @@ ssh-add -K \<path to private key\>
 
 See folder pdf_text_extraction_with_podofo for how to extract raw text from a pdf file  
 
+## Iterating over files in directory
+
+See folder c++_directory_iterator for how to iterate over files in directory  
+
+
