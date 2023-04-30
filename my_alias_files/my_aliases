@@ -1,0 +1,19 @@
+# dir="$(pwd)"
+dir="~/"
+name_of_this_file=my_aliases
+path_to_alias_file=$dir/my_aliases
+
+alias editaliasfile="vim $path_to_alias_file"
+alias sourcealiasfile="source $path_to_alias_file"
+
+runcommandandgrepfromoutput() { command=${@:1:($#-1)}; string_to_grep=${@:($#)}; command_with_grep="$command | grep $string_to_grep"; eval $command_with_grep; }
+
+runcommandandgrepfromoutputandgetword() {
+    command=${@:1:($#-2)};
+    string_to_grep=${@:($#-1):1};
+    word_to_grep=${@:($#)};
+    temp_args="$command $string_to_grep";
+    temp_out="$(runcommandandgrepfromoutput $temp_args)";
+    result="$(echo -n $temp_out | cut -d " " -f $word_to_grep)";
+    echo $result;
+}
