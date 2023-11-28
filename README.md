@@ -2,6 +2,18 @@
 
 ## Git/Github
 
+### How to push to this repo
+
+You need to create an access token. See here:
+
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+
+https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
+
+When doing "git remote -v" you should see that your remotes are all "https remotes". If that's not the case, you need to configure it accordingly.
+
+Then, when doing "git push", as a password you enter your access token.
+
 ### Config local user name and email
 
 git config --local user.name "..."  
