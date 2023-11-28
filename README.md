@@ -34,4 +34,6 @@ See folder pdf_text_extraction_with_podofo for how to extract raw text from a pd
 
 See folder c++_directory_iterator for how to iterate over files in directory  
 
+## Simple C examples
 
+See folder simple_c_input_output for some simple C examples.
