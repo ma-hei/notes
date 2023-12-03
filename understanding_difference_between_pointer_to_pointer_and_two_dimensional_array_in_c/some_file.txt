@@ -1,0 +1,2 @@
+line a foo bar
+line b bar foo
