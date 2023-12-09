@@ -1,0 +1,10 @@
+let rotate list c =
+    let rec take n = function
+    | [] -> []
+    | h::t -> if n = 0 then [] else h :: take (n-1) t
+    in
+    let rec drop n = function
+    | [] -> []
+    | h::t -> if n = 0 then h::t else drop (n-1) t
+    in
+    drop c list @ take c list;;

@@ -1,0 +1,4 @@
+let slice list a b =
+        let rec aux acc = function
+        | (c1, a, b, c::d) -> if c1>=a && c1<=b then (aux (c::acc) (c1+1, a, b, d)) else if c1>b then acc else (aux acc (c1+1, a, b, d)) in
+        List.rev (aux [] (0, a, b, list));;

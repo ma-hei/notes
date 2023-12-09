@@ -1,0 +1,7 @@
+let rec aux acc = function
+        | ([], a::b) -> aux acc ([a], b)
+        | ([One a], b::c) -> aux (a::acc) ([b], c)
+        | ([Many (a,b)], c::d) -> if a=1 then (aux (b::acc) ([c], d)) else (aux (b::acc) ([Many (a-1, b)], c::d))
+        | ([One a], []) -> a::acc
+        | ([Many (a,b)], []) -> if a=1 then (aux (b::acc) ([], [])) else (aux (b::acc) ([Many (a-1, b)], []))
+        | ([], []) -> acc;;

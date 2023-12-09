@@ -1,0 +1,6 @@
+let replicate list count =
+    let rec aux acc = function
+    | (a::b, c) -> if c=0 then (aux acc (b,count)) else (aux (a::acc) (a::b, c-1))
+    | ([], _) -> acc in
+    aux [] (list,count);;
+    

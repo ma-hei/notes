@@ -1,0 +1,5 @@
+let duplicate list =
+    let rec aux acc = function
+    | [] -> acc
+    | a::b -> aux (a::(a::acc)) b in
+    List.rev (aux [] list);;
