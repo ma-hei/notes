@@ -1,0 +1,4 @@
+let rec create_n_rand n m acc =
+        match n with
+        | 0 -> acc
+        | _ -> let r = (Random.int m) in create_n_rand (n-1) m (r::acc);;

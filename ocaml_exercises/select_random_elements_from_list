@@ -1,0 +1,14 @@
+let rec extract acc n = function
+        | [] -> ("0", [])
+        | a::b -> if n=0 then (a, acc@b) else extract (a::acc) (n-1) b;;
+
+let rec extract_rand list len =
+        extract [] (Random.int len) list;;
+
+let rec aux acc n list =
+        Random.init 1;
+        match n with
+        | 0 -> acc
+        | _ -> let length = List.length list in
+               let picked, rest = extract_rand list length in
+               aux (picked::acc) (n-1) rest;;
