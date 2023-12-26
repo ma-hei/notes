@@ -1,0 +1,3 @@
+This program counts all words in an all files in a directory.
+
+g++ -std=c++2a word_count.cpp -o word_count
