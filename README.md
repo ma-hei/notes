@@ -10,6 +10,10 @@ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/m
 
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
 
+Go too Profile -> Developer Settings -> Personal Access Tokens -> Generate new Token (Classic) -> Select some boxes -> Copy token.
+
+How to use token: Use it as password when asked for password when pushing to repo.
+
 When doing "git remote -v" you should see that your remotes are all "https remotes". If that's not the case, you need to configure it accordingly.
 
 Then, when doing "git push", as a password you enter your access token.
