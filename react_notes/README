@@ -1,0 +1,3 @@
+This folder contains a react app which renders a website which contains an animation. The animation is build using the WebGL library.
+
+On your local machine, run "npm install" followed by "npx vite". Then open your browser to see the animation.
