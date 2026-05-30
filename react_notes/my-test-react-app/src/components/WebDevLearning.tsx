@@ -38,7 +38,10 @@ Hostinger allows to install the open source operating system Ubuntu with CloudPa
 	<Link to="/formattingtest"> here.</Link>
     <h2>May 28 2026</h2>
     	To learn more about react, we built this react experiment: <Link to="/moneyplaner">expense planner</Link>
+    <h2>May 30 2026</h2>
+    	To make it easier to contribute to this website, the current state of it can now be downloaded from github.
     </div>
+
 
 
 </>	
