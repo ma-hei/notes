@@ -43,6 +43,13 @@ export default function FormattingTest() {
 
 			const canvasOptions = [
 				{
+					optionLabel: '<canvas width=' + window.innerWidth*2 + ' height=' + innerHeightWithoutBorder*2 + ' style="width:' + window.innerWidth + 'px; height: ' + heightOfDivs + 'px;"></canvas>',
+					width1: window.innerWidth*2,
+					height1: innerHeightWithoutBorder*2,
+					width2: window.innerWidth + 'px',
+					height2: heightOfDivs + 'px'
+				},
+				{
 					optionLabel: '<canvas width=' + window.innerWidth/2 + ' height=' + innerHeightWithoutBorder/2 + ' style="width:' + window.innerWidth/2 + 'px; height: ' + innerHeightWithoutBorder/2 + 'px;"></canvas>',
 					width1: window.innerWidth/2,
 					height1: innerHeightWithoutBorder/2,
@@ -69,13 +76,6 @@ export default function FormattingTest() {
 					height1: innerHeightWithoutBorder*2,
 					width2: window.innerWidth + 'px',
 					height2: innerHeightWithoutBorder/2 + 'px'
-				},
-				{
-					optionLabel: '<canvas width=' + window.innerWidth*2 + ' height=' + innerHeightWithoutBorder*2 + ' style="width:' + window.innerWidth + 'px; height: ' + heightOfDivs + 'px;"></canvas>',
-					width1: window.innerWidth*2,
-					height1: innerHeightWithoutBorder*2,
-					width2: window.innerWidth + 'px',
-					height2: heightOfDivs + 'px'
 				}
 			];
 
@@ -111,7 +111,6 @@ export default function FormattingTest() {
 				<ul>{pageParameters}</ul>
 			</div>
 			<div ref={div3Ref} className="divWithBorder">
-				<h1>Canvas</h1>
 				<WebGLDrawing width1={canvasOptions[selectedOption].width1} height1={canvasOptions[selectedOption].height1} width2={canvasOptions[selectedOption].width2} height2={canvasOptions[selectedOption].height2}/>
 			</div>
 			<div ref={div4Ref} className="divWithBorder">

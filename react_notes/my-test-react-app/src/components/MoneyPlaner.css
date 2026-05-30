@@ -1,0 +1,7 @@
+td + td, th + th {
+  border-left: 1px solid black;
+}
+
+th {
+	border-bottom: 1px solid black;
+}

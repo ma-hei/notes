@@ -92,6 +92,7 @@ export default function WebGLDrawing({width1, height1, width2, height2}: Compone
 			yCur -= stepSize;
 			var temp = Math.sqrt(1-(yCur*yCur));
 			for (var k=0; k<circleSteps; k++) {
+
 				var d = k*((2*Math.PI)/circleSteps);
 				var x1 = Math.sin(d) * temp;
 				var y1 = Math.cos(d) * temp;
@@ -167,11 +168,11 @@ export default function WebGLDrawing({width1, height1, width2, height2}: Compone
 		rotation += deltatime;
 		mat4.rotateY(mvMatrix, mvMatrix, rotation);
 		mat4.rotateZ(mvMatrix, mvMatrix, rotation);
+		//mat4.rotateX(mvMatrix, mvMatrix, rotation);
 		then = now;
 	        var mvUniform = gl.getUniformLocation(shaderProgram, "uMVMatrix");
         	gl.uniformMatrix4fv(mvUniform, false, mvMatrix);
 
-		
 		if (!canvasRef || !canvasRef.current) return;
 		var aspect = parseInt(canvasRef.current.style.width) / parseInt(canvasRef.current.style.height);
     		var pMatrix = mat4.create();
